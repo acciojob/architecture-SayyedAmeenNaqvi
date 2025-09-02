@@ -1,16 +1,160 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Architecture</title>
+    <style>
+        /* General page styling */
+        body {
+            background-color: #bcc8be;
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            color: #111;
+        }
+        /* Container to center and set width */
+        .container {
+            width: 1100px;
+            margin: 0 auto;
+        }
+        /* Image container */
+        .imageContainer {
+            margin-bottom: 20px;
+        }
+        .imageContainer img {
+            width: 100%;
+            max-width: 1100px;
+            height: auto;
+            display: block;
+            border-radius: 6px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        /* Table styling */
+        table {
+            width: 1100px;
+            border-collapse: collapse;
+            background-color: #c5d1c8;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+            border: 1px solid #7d7d7d;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        th, td {
+            border: 1px solid #7d7d7d;
+            padding: 10px;
+            vertical-align: top;
+        }
+        /* First and last columns fixed width 200 */
+        td:first-child {
+            width: 200px;
+            text-align: center;
+            background-color: #e1e7e3;
+        }
+        td:last-child {
+            width: 200px;
+            text-align: center;
+            background-color: #e1e7e3;
+        }
+        /* Middle column fixed width 600 */
+        td:nth-child(2) {
+            width: 600px;
+            background-color: #dae4d7;
+            text-align: center;
+            font-size: 16px;
+            line-height: 1.3;
+            padding: 15px 20px;
+        }
+        /* Images inside table columns */
+        td img {
+            width: 100%;
+            max-width: 180px;
+            height: auto;
+            border-radius: 4px;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+        }
+        /* Bold heading in second row middle column */
+        .objective-title {
+            font-weight: bold;
+            margin-bottom: 10px;
+            font-size: 18px;
+            text-align: center;
+        }
+        /* Text left aligned in 1st and 3rd row middle columns */
+        .left-align {
+            text-align: left;
+        }
+        /* Additional small text styling under images */
+        .caption {
+            text-align: left;
+            margin-top: 8px;
+            font-size: 13px;
+        }
+        .caption strong {
+            font-weight: bold;
+        }
+        .caption a {
+            color: #490580;
+            text-decoration: underline;
+        }
+        /* Make sure paragraphs in the middle column text are well spaced */
+        .text-content p {
+            margin: 8px 0;
+        }
+    </style>
 </head>
-
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
+    <div class="container">
+        <!-- Image container at the top -->
+        <div class="imageContainer">
+            <img src="https://images.unsplash.com/photo-1568605114967-8130f3a36994?auto=format&fit=crop&w=1100&q=80" alt="Architectural sketch and modern home" />
+        </div>
 
+        <!-- Table as required -->
+        <table>
+            <!-- Row 1 -->
+            <tr>
+                <td>
+                    <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=200&q=80" alt="Modern architecture exterior" />
+                </td>
+                <td class="left-align">
+                    Unit #5 -Floor Plans <br />
+                    A. Kitchen<br />
+                    B. Bathroom<br />
+                    C. Using "Slabs"<br />
+                    D. Georgian Home<br />
+                    E. Sketching Assignment #5
+                </td>
+                <td>
+                    <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=200&q=80" alt="Architectural spiral staircase" />
+                </td>
+            </tr>
+
+            <!-- Row 2 -->
+            <tr>
+                <td>
+                    <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=200&q=80" alt="Architectural spiral staircase" />
+                    <div class="caption">
+                        <strong>HousePlans.com</strong> The largest source for quality affordable ready-made house plans. A great place to surf for space planning ideas<br />
+                        <a href="https://www.houseplans.com/" target="_blank" rel="noopener noreferrer">learn more</a>
+                    </div>
+                </td>
+                <td>
+                    <div class="text-content">
+                        <div class="objective-title">Objective</div>
+                        Discuss factors that are important in the design of bedrooms. Plan the size and location of closets for a typical residence. Plan a furniture arrangement for a room. Implement important design considerations for bathrooms. Plan a bathroom that follows solid design principles. Plan the service area of a home by applying good design principles. Design a functional kitchen to meet a family’s needs Select kitchen appliances that are appropriate for a design. Plan an efficient clothes care center. Describe appropriate dimensions for garage space. Identify the rooms and areas that comprise the living area Apply design principles to planning a living room Integrate the furniture in a living room plan Analyze a dining room using good design principles. Design a functional entry and foyer.
+                    </div>
+                </td>
+                <td>
+                    <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=200&q=80" alt="Architectural spiral staircase" />
+                    <div class="caption">
+                        <strong>Green Floor</strong><br />
+                        FreeGreen.com offers both sponsored and non-sponsored floor plans. Their goal is to provide consumers with free solutions to their green architectural needs.<br />
+                        <a href="https://freegreen.com/" target="_blank" rel="noopener noreferrer">learn more</a>
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </div>
 </body>
-
 </html>
+
